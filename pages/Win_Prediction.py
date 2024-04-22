@@ -40,7 +40,7 @@ if st.button('Predict Probability'):
     rrr = runs_left*6/balls_left
     df =pd.DataFrame({'BattingTeam':[batting_team],'bowling_team':[bowling_team],'City':[selected_city],'runs_left':[runs_left],'balls_left':[balls_left],'wickets':[wickets],'Target':[target],'crr':[crr],'rrr':[rrr]})
     trf = ColumnTransformer([
-    ('trf',OneHotEncoder(categories=category,sparse=False,drop='first'),['BattingTeam','bowling_team','City'])
+    ('trf',OneHotEncoder(sparse=False,drop='first'),['BattingTeam','bowling_team','City'])
     ],remainder='passthrough')
     result = model.predict_proba(df)
     r_1 = round(result[0][0]*100)
