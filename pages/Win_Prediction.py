@@ -40,7 +40,7 @@ if st.button('Predict Probability'):
     rrr = runs_left*6/balls_left
     df =pd.DataFrame({'BattingTeam':[batting_team],'bowling_team':[bowling_team],'City':[selected_city],'runs_left':[runs_left],'balls_left':[balls_left],'wickets':[wickets],'Target':[target],'crr':[crr],'rrr':[rrr]})
     ohe = OneHotEncoder()
-    ohe.transform(X.iloc[:,:3])
+    ohe.transform(df.iloc[:,:3])
     category = ohe.categories_
     trf = ColumnTransformer([
     ('trf',OneHotEncoder(categories=category,sparse=False,drop='first'),['BattingTeam','bowling_team','City'])
