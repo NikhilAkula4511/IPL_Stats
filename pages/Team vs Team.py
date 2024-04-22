@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 df = pd.read_csv("Ball_By_Ball.csv")
-df_Scores= pd.read_csv(r"C:\Users\Hello\Desktop\Streamlit\IPL_stats\match_innings_score.csv")
+df_Scores= pd.read_csv(r"match_innings_score.csv")
 df_Bats = pd.read_csv('Batsmen.csv')
 df_Bowler = pd.read_csv('Bowler_stats.csv')
 
