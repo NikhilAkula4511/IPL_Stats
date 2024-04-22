@@ -25,7 +25,7 @@ Highest_Score = df_Scores_team.total_run_y.max()
 
 
 st.divider()
-team_pic=f'C:\\Users\\Hello\\Desktop\Streamlit\\IPL_stats\\{team}.png'
+team_pic=f'{team}.png'
 
 title_writing = team
 title_format = f'<p style="text-align: center; font-family: ' \
