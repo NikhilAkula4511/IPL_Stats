@@ -1,6 +1,12 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+from sklearn.ensemble import RandomForestClassifier
 predicted = pd.read_csv("Predicted_DataFrame.csv")
 import joblib
 #predicted Data Frame Representation
