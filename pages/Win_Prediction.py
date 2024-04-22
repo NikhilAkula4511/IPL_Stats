@@ -5,7 +5,7 @@ predicted = pd.read_csv("Predicted_DataFrame.csv")
 import joblib
 #predicted Data Frame Representation
 st.header("NIKHIL_ELITE_13")
-model = joblib.load("C:\\Users\\Hello\\Desktop\\Streamlit\\IPL_stats\\logistc_regression.pkl")
+model = joblib.load("logistc_regression.pkl")
 st.title('IPL Win Predictor')
 col1,col2 = st.columns(2)
 
