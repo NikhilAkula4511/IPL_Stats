@@ -14,7 +14,7 @@ st.title("Analysis of Batsman stats ")
 
 import numpy as np
 import pandas as pd
-df = pd.read_csv(r'C:\Users\Hello\Desktop\Streamlit\IPL_stats\Batsmen.csv')
+df = pd.read_csv(r'Batsmen.csv')
 
 
 df['Season'] = df['Season'].astype(str).apply(lambda x: x.replace(",", ""))
