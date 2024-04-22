@@ -15,7 +15,7 @@ st.header("IPL_Nikhil_Elite13")
 st.title("Analysis of Team stats ")
 
 df = pd.read_csv('IPL_Matches_2008_2022_Modified.csv')
-df_Scores= pd.read_csv(r"C:\Users\Hello\Desktop\Streamlit\IPL_stats\match_innings_score.csv")
+df_Scores= pd.read_csv(r"match_innings_score.csv")
 #st.write(df)
 
 team = st.selectbox("select a team" ,df.Team1.unique())
